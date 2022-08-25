@@ -130,6 +130,7 @@ header p {
 @media screen and (max-width: 37.5rem) {
   header {
     margin-bottom: 4rem;
+    text-align: center;
   }
   .content {
     grid-template-columns: auto;
