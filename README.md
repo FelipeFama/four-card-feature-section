@@ -1,6 +1,8 @@
 # four-card-feature-section-master
 Four card feature section challenge solution in frontendmentor.io
 
+
+## Desktop Layout
 ![four-card-feature-section](https://user-images.githubusercontent.com/91050670/186616957-bff9ae56-1621-4a72-8a10-5519e7569660.png)
 
 ## Responsive Layout
