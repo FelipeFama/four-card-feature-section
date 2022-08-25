@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.938rem;
+  background-color: var(--very-light-gray);
+  padding: 2rem 2rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 1.1125rem;
+}
+
+h1, h2 {
+  color: var(--very-dark-blue);
+}
+
+p {
+  color: var(--grayish-blue);
+  margin-top: 0.8rem;
+}
+
+/*header*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 2rem;
+}
+
+header h1:first-of-type {
+  font-weight: 200;
+}
+
+header h1:last-of-type {
+  font-weight: 600;
+}
+
+header p {
+  margin-top: 0.5rem;
+  max-width: 40%;
+  text-align: center;
+}
+
+/*content*/
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 15px 0px rgba(44, 44, 44, 0.15);
+  padding: 1.4rem 1.6rem;
+}
+
+.card p {
+  letter-spacing: 1px;
+}
+
+.card img {
+  max-width: 4rem;
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+
+.supervisor {
+  border-top: 4px solid var(--cyan);
+}
+
+.team-builder {
+  border-top: 4px solid var(--red);
+}
+
+.calculator {
+  border-top: 4px solid var(--blue);
+}
+
+.karma {
+  border-top: 4px solid var(--orange);
+  grid-column: 2;
+}
+
+.supervisor, .calculator {
+  grid-row: span 2;
+  align-self: center;
+}
+
+/*media queries*/
+@media screen and (max-width: 48rem) {
+  header p {
+    max-width: 100%;
+  }
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .supervisor, .calculator {
+    grid-row: 1;
+  }
+  .card p {
+    letter-spacing: normal;
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  header {
+    margin-bottom: 4rem;
+  }
+  .content {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  .card {
+    max-width: 20rem;
+  }
+  .card img {
+    max-width: 3.125rem;
+  }
+  .karma {
+    grid-column: 1;
+  }
+  .calculator {
+    grid-row: auto;
+  }
+}

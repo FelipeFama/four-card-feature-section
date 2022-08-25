@@ -1,2 +1,1 @@
-# four-card-feature-section-master
- Front end mentor four card feature section master challenge solution.
+Four card feature section challenge solution in frontendmentor.io
