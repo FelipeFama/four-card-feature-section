@@ -1,4 +1,4 @@
-# four-card-feature-section-master
+# four-card-feature-section
 Four card feature section challenge solution in frontendmentor.io
 
 
